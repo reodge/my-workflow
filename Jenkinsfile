@@ -1,3 +1,5 @@
 echo 'hello from Workflow'
 echo 'just some more stuff too'
+stage concurrency: 1, name: 'build2'
 input 'Ready to go?'
+stage concurrency: 1, name: 'almost-done'
